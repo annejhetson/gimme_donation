@@ -1,0 +1,9 @@
+<%= form_for @student, url: students_path, remote: true do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control" %>
+
+  <br>
+  <%= f.submit class: "btn btn-success" %>
+
+<% end %>

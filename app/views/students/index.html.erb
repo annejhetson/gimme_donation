@@ -1,0 +1,9 @@
+<h2>List of Students!</h2>
+
+<ul id="test">
+  <% @students.each do |student| %>
+    <li><%= link_to student.name, student_path(student) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Add Student", new_student_path, id: "new_link", class: "btn btn-success", remote: true %>
