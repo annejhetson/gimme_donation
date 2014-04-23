@@ -11,6 +11,7 @@ before_action :set_student, only: [:show, :edit, :update, :destroy]
   end
 
   def show
+    @charge = Charge.new
   end
 
   def create
